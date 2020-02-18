@@ -1,4 +1,4 @@
-# THIS PROJECT
+# About this Project
 This project is a POC to show how to integrate WAF capabilities (ModSecurity) with Nginx Open Source.
 
 Features:
@@ -20,6 +20,6 @@ This project is based on image owasp/modsecurity:3.0.3 and contains
 - OWASP ModSecurity CRS 3.2.0
 - Demo custom rules
 
-## Links
+## Docker image documentation
 
-[Docker Hub Location](https://hub.docker.com/repository/docker/emmerson/modsecurity-owasp-nginx-oss)
+[Please visit Docker Hub Location](https://hub.docker.com/repository/docker/emmerson/modsecurity-owasp-nginx-oss)
