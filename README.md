@@ -20,6 +20,35 @@ This project is based on image owasp/modsecurity:3.0.3 and contains
 - OWASP ModSecurity CRS 3.2.0
 - Demo custom rules
 
+
+## Running the image
+
+docker run -ti -p 80:80 -e modsecurity-owasp-nginx-oss:v1
+
+
+## Logs
+
+Get container ID
+
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                         NAMES
+d38f0f24e071        my-waf:v1           "nginx -g 'daemon of…"   8 seconds ago       Up 7 seconds        0.0.0.0:80->80/tcp, 443/tcp   fervent_volhard
+```
+
+Accessing to the image
+
+```
+$ docker exec -it d38f0f24e071  /bin/bash
+```
+
+Reading logs
+
+```
+root@d38f0f24e071:/# tail -f /var/log/modsec_audit.log
+```
+
+
 ## Docker image documentation
 
 [Please visit Docker Hub Location](https://hub.docker.com/repository/docker/emmerson/modsecurity-owasp-nginx-oss)
